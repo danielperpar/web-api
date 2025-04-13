@@ -1,4 +1,4 @@
-namespace web_api
+namespace Api
 {
     public class WeatherForecast
     {

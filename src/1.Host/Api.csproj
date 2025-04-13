@@ -15,4 +15,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\2.Application\Application\Application.csproj" />
+    <ProjectReference Include="..\4.Infrastructure\DbFirst.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

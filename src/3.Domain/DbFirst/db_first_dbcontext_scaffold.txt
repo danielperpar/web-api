@@ -1,0 +1,4 @@
+﻿DBFirst approach - cli command with current directory: web-api\src\3.Domain:
+============================================================================
+
+dotnet ef dbcontext scaffold "Data Source=.\SQLEXPRESS;Initial Catalog=DBFirstCursoEF;TrustServerCertificate=True;Trusted_Connection=True" Microsoft.EntityFrameworkCore.SqlServer --context-dir ..\4.Infrastructure\DbFirst --output-dir .\DbFirst
