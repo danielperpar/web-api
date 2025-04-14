@@ -1,11 +1,10 @@
-﻿using Application.Dto;
-using Domain.DbFirst.Entities;
+﻿using Domain.DbFirst.Entities;
 
 namespace Application
 {
     public interface IHumanResourcesService
     {
-       Task CreateEmployee(Employee employeeDto);
+       Task CreateEmployee(Employee employee);
        Task<IEnumerable<Employee>> GetAllEmployees();
     }
 }

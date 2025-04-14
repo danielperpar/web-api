@@ -8,6 +8,7 @@
     <UserSecretsId>85121954-1e9b-4622-8512-fe521a9f13bb</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\2.Application\Application\Application.csproj" />
+    <ProjectReference Include="..\2.Application\Application.csproj" />
     <ProjectReference Include="..\4.Infrastructure\DbFirst.Infrastructure.csproj" />
   </ItemGroup>
 
