@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Domain.DbFirst.Entities;
+﻿namespace Domain.DbFirst.Entities;
 
 public partial class WorkingExperience
 {

@@ -9,7 +9,6 @@ namespace Application.Mapper
         {
             var employee = new Employee()
             {
-                EmployeeId = employeeDto.EmployeeId,
                 EmployeeName = employeeDto.EmployeeName,
                 WorkingExperiences = new List<WorkingExperience>(employeeDto.WorkingExperiences.Select(workingExpDto => MapDown(workingExpDto)))
             };
@@ -38,8 +37,6 @@ namespace Application.Mapper
         {
             var workingExp = new WorkingExperience()
             {
-                Id = workingExpDto.Id,
-                EmployeeId = workingExpDto.EmployeeId,
                 Name = workingExpDto.Name,
                 Details = workingExpDto.Details,
                 Environment = workingExpDto.Environment,

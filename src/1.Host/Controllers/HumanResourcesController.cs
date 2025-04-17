@@ -17,9 +17,9 @@ namespace Api.Controllers
         }
 
         [ProducesResponseType(200)]
-        [Produces("application/json")]
+        [Consumes("application/json")]
         [HttpPost("employee")]
-        public IActionResult CreateEmployee(EmployeeDto employeeDto)
+        public IActionResult CreateEmployee([FromBody]EmployeeDto employeeDto)
         {
             var employee = _mapper.MapDown(employeeDto);
             _humanResourcesService.CreateEmployee(employee);

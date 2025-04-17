@@ -7,9 +7,9 @@ namespace DbFirst.Infrastructure.DbFirst;
 public class UnitOfWork : IUnitOfWork, IDisposable
 {
     private readonly IEmployeeRepository _employeeRepository;
-    private readonly DbFirstCursoEFContext _dbFirstCursoEFContext;
+    private readonly CursoEFContext _dbFirstCursoEFContext;
 
-    public UnitOfWork(IEmployeeRepository employeeRepository, DbFirstCursoEFContext dbFirstCursoEFContext)
+    public UnitOfWork(IEmployeeRepository employeeRepository, CursoEFContext dbFirstCursoEFContext)
     {
         _employeeRepository = employeeRepository;
         _dbFirstCursoEFContext = dbFirstCursoEFContext;

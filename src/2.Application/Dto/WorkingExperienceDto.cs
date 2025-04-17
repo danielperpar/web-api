@@ -1,9 +1,13 @@
-﻿namespace Application.Dto
+﻿using Swashbuckle.AspNetCore.Annotations;
+
+namespace Application.Dto
 {
     public class WorkingExperienceDto
     {
+        [SwaggerSchema(ReadOnly = true)]
         public int Id { get; set; }
 
+        [SwaggerSchema(ReadOnly = true)]
         public int EmployeeId { get; set; }
 
         public string Name { get; set; } = null!;

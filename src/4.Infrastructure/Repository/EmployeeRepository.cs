@@ -7,9 +7,9 @@ namespace DbFirst.Infrastructure.Repository
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        private readonly DbFirstCursoEFContext _dbFirstCursoEFContext;
+        private readonly CursoEFContext _dbFirstCursoEFContext;
 
-        public EmployeeRepository(DbFirstCursoEFContext dbFirstCursoEFContext)
+        public EmployeeRepository(CursoEFContext dbFirstCursoEFContext)
         {
             _dbFirstCursoEFContext = dbFirstCursoEFContext;
         }
@@ -21,7 +21,7 @@ namespace DbFirst.Infrastructure.Repository
 
         public async Task<IEnumerable<Employee>> GetAllAsync()
         {
-            return await _dbFirstCursoEFContext.Employees.ToListAsync();
+            return await _dbFirstCursoEFContext.Employees.Include(e => e.WorkingExperiences).ToListAsync();
         }
     }
 }

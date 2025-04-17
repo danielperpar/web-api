@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\3.Domain\Domain.DbFirst.Entities.csproj" />
   </ItemGroup>
 

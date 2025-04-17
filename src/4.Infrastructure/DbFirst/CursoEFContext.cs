@@ -3,13 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DbFirst.Entities;
 
-public partial class DbFirstCursoEFContext : DbContext
+public partial class CursoEFContext : DbContext
 {
-    public DbFirstCursoEFContext()
+    public CursoEFContext()
     {
     }
 
-    public DbFirstCursoEFContext(DbContextOptions<DbFirstCursoEFContext> options)
+    public CursoEFContext(DbContextOptions<CursoEFContext> options)
         : base(options)
     {
     }

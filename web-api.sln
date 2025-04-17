@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.CrossCutting", "5.CrossCu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.DbFirst.Entities", "src\3.Domain\Domain.DbFirst.Entities.csproj", "{7C4B490A-715D-4D87-BA0A-725EAC85BDB2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbFirst.Infrastructure", "src\4.Infrastructure\DbFirst.Infrastructure.csproj", "{0CFDF14A-CCF3-4C38-8BE0-7D434AA2B80D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\4.Infrastructure\Infrastructure.csproj", "{0CFDF14A-CCF3-4C38-8BE0-7D434AA2B80D}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9DD9385F-2CB0-4576-9115-894A18089898}"
 EndProject

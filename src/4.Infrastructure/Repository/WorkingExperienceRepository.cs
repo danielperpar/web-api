@@ -7,9 +7,9 @@ namespace DbFirst.Infrastructure.Repository
 {
     internal class WorkingExperienceRepository : IWorkingExperienceRepository
     {
-        private readonly DbFirstCursoEFContext _dbFirstCursoEFContext;
+        private readonly CursoEFContext _dbFirstCursoEFContext;
 
-        public WorkingExperienceRepository(DbFirstCursoEFContext dbFirstCursoEFContext)
+        public WorkingExperienceRepository(CursoEFContext dbFirstCursoEFContext)
         {
             _dbFirstCursoEFContext = _dbFirstCursoEFContext;
         }
