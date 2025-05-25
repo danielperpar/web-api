@@ -4,7 +4,7 @@ using Domain.DbFirst.Entities.UnitOfWork;
 
 namespace DbFirst.Infrastructure.DbFirst;
 
-public class UnitOfWork : IUnitOfWork, IDisposable
+public class UnitOfWork : IUnitOfWork
 {
     private readonly IEmployeeRepository _employeeRepository;
     private readonly CursoEFContext _dbFirstCursoEFContext;
@@ -20,10 +20,5 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     public async Task<int> SaveAsync()
     {
        return await _dbFirstCursoEFContext.SaveChangesAsync();
-    }
-
-    public void Dispose()
-    {
-        _dbFirstCursoEFContext.Dispose();
     }
 }
