@@ -11,7 +11,7 @@ namespace DbFirst.Infrastructure.Repository
 
         public WorkingExperienceRepository(CursoEFContext dbFirstCursoEFContext)
         {
-            _dbFirstCursoEFContext = _dbFirstCursoEFContext;
+            _dbFirstCursoEFContext = dbFirstCursoEFContext;
         }
         public void AddWorkingExperience(WorkingExperience workingExperience)
         {
@@ -20,7 +20,7 @@ namespace DbFirst.Infrastructure.Repository
 
         public async Task<IEnumerable<WorkingExperience>> GetAllAsync()
         {
-            return await _dbFirstCursoEFContext.WorkingExperiences.ToListAsync();
+            return await _dbFirstCursoEFContext.WorkingExperiences.AsNoTracking().ToListAsync();
         }
     }
 }

@@ -5,6 +5,8 @@ using Application.Mapper;
 
 namespace Api.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class HumanResourcesController : ControllerBase
     {
         private readonly IHumanResourcesService _humanResourcesService;
@@ -26,7 +28,7 @@ namespace Api.Controllers
             return Created();
         }
 
-        [ProducesResponseType<IEnumerable<EmployeeDto>>(200)]
+        [ProducesResponseType<List<EmployeeDto>>(200)]
         [Produces("application/json")]
         [HttpGet("employees")]
         public async Task<IActionResult> GetEmployees()
