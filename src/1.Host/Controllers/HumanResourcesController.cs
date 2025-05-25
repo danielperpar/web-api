@@ -21,10 +21,10 @@ namespace Api.Controllers
         [ProducesResponseType(200)]
         [Consumes("application/json")]
         [HttpPost("employee")]
-        public IActionResult CreateEmployee([FromBody]EmployeeDto employeeDto)
+        public async Task<IActionResult> CreateEmployee([FromBody]EmployeeDto employeeDto)
         {
             var employee = _mapper.MapDown(employeeDto);
-            _humanResourcesService.CreateEmployee(employee);
+            await _humanResourcesService.CreateEmployee(employee);
             return Created();
         }
 
